@@ -1,11 +1,11 @@
-VERSION=1.0.0-alpha9
+VERSION="8.0.3"
 
-default: composer package
+default: drush package
 
-composer: clean
-	@curl -sS https://getcomposer.org/installer | php -- --version=$(VERSION)$
+drush: clean
 	@mkdir -p debian/usr/bin
-	@cp composer.phar debian/usr/bin/composer
+	@curl -sSL "https://github.com/drush-ops/drush/releases/download/${VERSION}/drush.phar" -o debian/usr/bin/drush
+	@chmod +x debian/usr/bin/drush
 
 package:
 	@fakeroot make finish
@@ -17,6 +17,5 @@ finish:
 clean:
 	@rm -rf debian/usr
 	@rm -f *.deb
-	@rm -f composer.phar
 
 .PHONY: default

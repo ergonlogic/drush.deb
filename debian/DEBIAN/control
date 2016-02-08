@@ -1,14 +1,16 @@
-Source: composer
+Source: drush
 Priority: extra
-Maintainer: Rob Loach <robloach@gmail.com>
-Homepage: http://getcomposer.org
-Package: composer
-Version: 1.0.0-alpha9
+Maintainer: Christopher Gervais <chris@ergonlogic.com>
+Homepage: http://www.drush.org
+Package: drush
+Version: 8.0.3
 Section: php
 Installed-Size: 9216
 Architecture: all
-Depends: php5
-Description: Dependency Manager for PHP.
- Composer is a tool for dependency management in PHP. It allows you to declare
- the dependent libraries your project needs and it will install them in your
- project for you.
+Depends: php5-cli
+Description: Scripting and command-line toolkit for Drupal.
+ Drush is a command line shell and Unix scripting interface for Drupal. Drush
+ core ships with lots of useful commands for interacting with code like
+ modules/themes/profiles. Similarly, it runs update.php, executes sql queries
+ and DB migrations, and misc utilities like run cron or clear cache. Drush can
+ be extended by 3rd party commandfiles.

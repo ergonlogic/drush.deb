@@ -1,8 +1,8 @@
 Format: http://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
-Upstream-Name: Composer
-Source: http://getcomposer.org
+Upstream-Name: Drush
+Source: http://www.drush.org
 
 Files: *
-Copyright: 2011, Nils Adermann
-           2011, Jordi Boggiano
-License: Expat
+Copyright: 2016, Moshe Weitzman
+           2016, the Drush Maintainers (https://github.com/orgs/drush-ops/people)
+License: GPLv2+

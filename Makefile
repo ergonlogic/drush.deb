@@ -8,6 +8,7 @@ drush: clean
 	@chmod +x debian/usr/bin/drush
 
 package:
+	@rpl 8.x.x ${VERSION} debian/DEBIAN/control
 	@fakeroot make finish
 
 finish:

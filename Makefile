@@ -1,4 +1,4 @@
-VERSION="8.0.3"
+VERSION="8.1.2"
 
 default: drush package
 
@@ -8,6 +8,7 @@ drush: clean
 	@chmod +x debian/usr/bin/drush
 
 package:
+	@rpl 8.x.x ${VERSION} debian/DEBIAN/control
 	@fakeroot make finish
 
 finish:

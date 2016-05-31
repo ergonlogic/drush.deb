@@ -1,4 +1,4 @@
-VERSION="8.0.3"
+VERSION="8.1.2"
 
 default: drush package
 
